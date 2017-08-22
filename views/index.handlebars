@@ -21,7 +21,7 @@
 
 <h2>Burgers that are devoured!</h2>
 
-{{!--<ul>
+<ul>
   {{#each burgers}}
     {{#if this.devour}}
       <li>
@@ -32,13 +32,13 @@
           <button type="submit">Not Devoured</button>
         </form>
 
-        {{> burgers}}
+        {{!--{{> burgers}}--}}
       </li>
     {{/if}}
   {{/each}}
-</ul>--}}
+</ul>
 
-<h2>Add a Burgert</h2>
+<h2>Add a Burger</h2>
 <form class="create-update-form" action="/" method="POST">
 
   <div class="form-group">

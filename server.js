@@ -2,7 +2,7 @@ var express = require("express");
 var bodyParser = require("body-parser");
 var mysql = require('mysql');
 var methodOverride = require('method-override');
-var PORT = 3004;
+var PORT = process.env.PORT || 3004;
 var app = express();
 
 app.use(bodyParser.json());
